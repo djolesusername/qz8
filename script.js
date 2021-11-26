@@ -89,14 +89,7 @@ function getDragAfterElement(container, y) {
   ).element;
 }
 
-const buttons = document.querySelectorAll(".addItem");
-const submits = document.querySelectorAll(".submitItem");
-for (const button of buttons) {
-  button.addEventListener("click", addItem);
-}
-for (const button of submits) {
-  button.addEventListener("click", submitItem);
-}
+
 
 function addItem(e) {
   console.log(e.target);
@@ -133,4 +126,12 @@ const checkStorage = () => {
 
 window.addEventListener("DOMContentLoaded", () => {
   checkStorage();
+  const buttons = document.querySelectorAll(".addItem");
+const submits = document.querySelectorAll(".submitItem");
+for (const button of buttons) {
+  button.addEventListener("click", addItem);
+}
+for (const button of submits) {
+  button.addEventListener("click", submitItem);
+}
 });
