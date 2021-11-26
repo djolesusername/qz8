@@ -1,0 +1,86 @@
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  margin: 5rem;
+  background-repeat: no-repeat;
+  min-height: 83vh;
+  background-position: bottom;
+  background-size: 70vw 65vh;
+  color: white;
+  background-image: linear-gradient(rgba(127, 129, 129, 0.1), rgba(17, 21, 22, 0.8)), url("./assets/catmeme.png");
+}
+.hold {
+  border: 2px solid hsl(135, 90%, 77%);
+}
+.hidden {
+  visibility: hidden;
+}
+.hovered {
+  border: 2px dotted red;
+}
+.main-container {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  margin: auto;
+  text-align: center;
+}
+.main-container div {
+  margin-right: 1rem;
+}
+#backlog {
+  background-color: indianred;
+}
+#complete {
+  background-color: hsl(176, 70%, 44%);
+}
+
+#inprogress {
+  background-color: hsl(61, 66%, 37%);
+}
+#todo {
+  background-color: hsl(192, 68%, 71%);
+}
+button {
+  float: right;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+}
+button:hover:not(.submitItem) {
+  font-size: 1.6rem;
+}
+input {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+}
+
+input:active,
+input:hover,
+input:focus {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+.container {
+  border-radius: 8px;
+}
+.submitItem {
+  background-color: black;
+  border-radius: 8px;
+  padding: 3px;
+  padding-left: 6px;
+}
+.addInput:hover {
+  opacity: 0.5;
+}
